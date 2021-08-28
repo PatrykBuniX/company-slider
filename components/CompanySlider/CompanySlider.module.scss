@@ -1,0 +1,26 @@
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1024px;
+}
+
+@keyframes slide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.listsWrapper {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: slide 10s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
